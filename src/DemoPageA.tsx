@@ -11,6 +11,7 @@ class DemoPageA extends Component {
         <button type="button" className="btn btn-outline-info btn-lg">Track Trace</button><br />
         <button type="button" className="btn btn-outline-light btn-lg">Autocollect an Error</button>
         <button type="button" className="btn btn-outline-light btn-lg">Autocollect a Request</button>
+        <br />...or navigate to another page to trigger component-based page tracking.
       </div>
     );
   }
