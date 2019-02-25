@@ -5,7 +5,7 @@
 }
 
 .logos {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .main {
@@ -32,6 +32,9 @@
 }
 .react-ai-link {
   color: #61dafb;
+  font-size: calc(10px + 0.8vmin);
+}
+.bottom-text {
   font-size: calc(10px + 0.8vmin);
 }
 button {

@@ -9,13 +9,13 @@ import { createBrowserHistory } from "history"
 
 const history = createBrowserHistory()
 // const IK = process.env.APPINSIGHTS_KEY === "" ? "XXX" : process.env.APPINSIGHTS_KEY;
-ReactAI.initialize({ instrumentationKey: "IK", history: history }); // XXX
+ReactAI.initialize({ instrumentationKey: "IK", history: history, debug: true }); // XXX
 
-ReactDOM.render((
+export var IndexPage =
     <Router history={history}>
         <App />
-    </Router>),
-    document.getElementById('root'));
+    </Router>;
+ReactDOM.render(IndexPage, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

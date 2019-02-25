@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+  >
+    <button
+      aria-controls="navbarsExampleDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarsExampleDefault"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarsExampleDefault"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <li
+          className="nav-item active"
+        >
+          <a
+            className="nav-link"
+            href="/demo-a"
+            onClick={[Function]}
+          >
+            Page A
+          </a>
+        </li>
+        <li
+          className="nav-item active"
+        >
+          <a
+            className="nav-link"
+            href="/demo-b"
+            onClick={[Function]}
+          >
+            Page B
+          </a>
+        </li>
+        <li
+          className="nav-item active"
+        >
+          <a
+            className="nav-link"
+            href="/demo-c"
+            onClick={[Function]}
+          >
+            Page C
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    className="main"
+  >
+    <div
+      className="page-content"
+    >
+      <div
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseMove={[Function]}
+        onScroll={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div>
+          <div
+            className="main-text"
+          >
+            Demo Page A
+          </div>
+          <button
+            className="btn btn-outline-warning btn-lg"
+            type="button"
+          >
+            Track Exception
+          </button>
+          <button
+            className="btn btn-outline-primary btn-lg"
+            type="button"
+          >
+            Track Event
+          </button>
+          <button
+            className="btn btn-outline-info btn-lg"
+            type="button"
+          >
+            Track Trace
+          </button>
+          <br />
+          <button
+            className="btn btn-outline-light btn-lg"
+            type="button"
+          >
+            Autocollect an Error
+          </button>
+          <button
+            className="btn btn-outline-light btn-lg"
+            type="button"
+          >
+            Autocollect a Request
+          </button>
+          <br />
+          ...or navigate to another page to trigger component-based page tracking.
+        </div>
+      </div>
+    </div>
+    <div
+      className="bottom-link main-text"
+    >
+      <div
+        className="logos"
+      >
+        <img
+          alt="React"
+          className="logo"
+          src="logo-react.svg"
+        />
+        +
+        <img
+          alt="Application Insights"
+          className="logo"
+          src="logo-ai.svg"
+        />
+        =
+        <img
+          alt="love"
+          className="logo"
+          id="heart"
+          src="heart.svg"
+        />
+      </div>
+      This is a demo application of Application Insights and React, using
+      <a
+        className="react-ai-link"
+        href="https://github.com/Azure/react-appinsights#react-appinsights"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        react-appinsights
+      </a>
+    </div>
+  </div>
+</div>
+`;

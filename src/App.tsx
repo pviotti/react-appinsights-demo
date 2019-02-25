@@ -31,12 +31,14 @@ export default class App extends Component {
               =
               <img src={heart} id="heart" className="logo" alt="love" />
             </div>
+
+            <span className="bottom-text">This is a demo application of Application Insights and React, using </span>
             <a className="react-ai-link"
               href="https://github.com/Azure/react-appinsights#react-appinsights"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn about Application Insights in React
+              react-appinsights
             </a>
           </div>
         </div>
