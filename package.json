@@ -2,6 +2,7 @@
   "name": "application-insights-react-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://pviotti.github.io/react-appinsights-demo/",
   "dependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/jest": "24.0.6",
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
