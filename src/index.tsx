@@ -20,7 +20,7 @@ ReactAI.initialize({
     debug: true
 });
 
-ReactDOM.render(<Router history={history}>
+ReactDOM.render(<Router history={history} basename={process.env.PUBLIC_URL} >
     <App />
 </Router>, document.getElementById('root'));
 
