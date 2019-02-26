@@ -85,18 +85,21 @@ exports[`renders correctly 1`] = `
           </div>
           <button
             className="btn btn-outline-warning btn-lg"
+            onClick={[Function]}
             type="button"
           >
             Track Exception
           </button>
           <button
             className="btn btn-outline-primary btn-lg"
+            onClick={[Function]}
             type="button"
           >
             Track Event
           </button>
           <button
             className="btn btn-outline-info btn-lg"
+            onClick={[Function]}
             type="button"
           >
             Track Trace
@@ -104,15 +107,17 @@ exports[`renders correctly 1`] = `
           <br />
           <button
             className="btn btn-outline-light btn-lg"
-            type="button"
-          >
-            Autocollect an Error
-          </button>
-          <button
-            className="btn btn-outline-light btn-lg"
+            onClick={[Function]}
             type="button"
           >
             Autocollect a Request
+          </button>
+          <button
+            className="btn btn-outline-light btn-lg"
+            onClick={[Function]}
+            type="button"
+          >
+            Autocollect an Error
           </button>
           <br />
           ...or navigate to another page to trigger component-based page tracking.
@@ -144,7 +149,11 @@ exports[`renders correctly 1`] = `
           src="heart.svg"
         />
       </div>
-      This is a demo application of Application Insights and React, using
+      <span
+        className="bottom-text"
+      >
+        This is a demo application of Application Insights and React, using 
+      </span>
       <a
         className="react-ai-link"
         href="https://github.com/Azure/react-appinsights#react-appinsights"

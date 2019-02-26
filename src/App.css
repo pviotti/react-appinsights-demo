@@ -46,3 +46,7 @@ button {
   padding-right: 22px;
   height: 6vmin;
 }
+
+.alert {
+  margin-top: 25px;
+}
