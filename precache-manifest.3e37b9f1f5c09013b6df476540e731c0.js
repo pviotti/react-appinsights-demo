@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f5e37c53f880f5f271ad",
+    "revision": "85684d8579984703c292",
     "url": "/react-appinsights-demo/static/css/main.b1928a7b.chunk.css"
   },
   {
-    "revision": "f5e37c53f880f5f271ad",
-    "url": "/react-appinsights-demo/static/js/main.f5e37c53.chunk.js"
+    "revision": "85684d8579984703c292",
+    "url": "/react-appinsights-demo/static/js/main.85684d85.chunk.js"
   },
   {
     "revision": "0f587878e6b5ba50ac3a",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/react-appinsights-demo/static/media/heart.4e01da79.svg"
   },
   {
-    "revision": "dd2c08da548de056bf94dd554ec1e712",
+    "revision": "8087296c04115da5495946b5ff11c96c",
     "url": "/react-appinsights-demo/index.html"
   }
 ];
