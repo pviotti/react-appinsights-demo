@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b937c01aa80cdda84af0",
+    "revision": "09bbc5ef801845173506",
     "url": "/react-appinsights-demo/static/css/main.b1928a7b.chunk.css"
   },
   {
-    "revision": "b937c01aa80cdda84af0",
-    "url": "/react-appinsights-demo/static/js/main.b937c01a.chunk.js"
+    "revision": "09bbc5ef801845173506",
+    "url": "/react-appinsights-demo/static/js/main.09bbc5ef.chunk.js"
   },
   {
-    "revision": "0f587878e6b5ba50ac3a",
-    "url": "/react-appinsights-demo/static/js/runtime~main.0f587878.js"
+    "revision": "2f3351d1815b20bd19bf",
+    "url": "/react-appinsights-demo/static/js/runtime~main.2f3351d1.js"
   },
   {
-    "revision": "72fb7e3c5cef2cf340de",
-    "url": "/react-appinsights-demo/static/js/2.72fb7e3c.chunk.js"
+    "revision": "1581ce475701d229c90b",
+    "url": "/react-appinsights-demo/static/js/2.1581ce47.chunk.js"
   },
   {
     "revision": "1e2d221778c277f8431990697fe207e7",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/react-appinsights-demo/static/media/heart.4e01da79.svg"
   },
   {
-    "revision": "633de6834656420bc04cdac79be8d3d4",
+    "revision": "f91c48bbef039039acff55c1785fdfc8",
     "url": "/react-appinsights-demo/index.html"
   }
 ];
