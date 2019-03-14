@@ -3,23 +3,29 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Router  } from 'react-router-dom';
-import { ReactAI } from 'react-appinsights';
+import { Router } from 'react-router-dom';
+import { reactAI } from 'react-appinsights';
+import { ApplicationInsights } from "@microsoft/applicationinsights-web";
 import { createBrowserHistory } from "history"
 
 import dotenv from 'dotenv';
 dotenv.config();
 
 const history = createBrowserHistory({ basename: process.env.PUBLIC_URL });
-const IK = process.env.REACT_APP_APPINSIGHTS_KEY === undefined? "XXX" : process.env.REACT_APP_APPINSIGHTS_KEY;
-ReactAI.initialize({
-    instrumentationKey: IK,
-    maxBatchInterval: 0,
-    history: history,
-    debug: true
-});
+const IK = process.env.REACT_APP_APPINSIGHTS_KEY === undefined ? "XXX" : process.env.REACT_APP_APPINSIGHTS_KEY;
 
-ReactDOM.render(<Router  history={history} >
+let appInsights = new ApplicationInsights({
+    config: {
+        instrumentationKey: IK,
+        extensions: [reactAI],
+        extensionConfig: {
+            [reactAI.extensionId]: { debug: true }
+        }
+    }
+});
+appInsights.loadAppInsights();
+
+ReactDOM.render(<Router history={history} >
     <App />
 </Router >, document.getElementById('root'));
 

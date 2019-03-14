@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { withAITracking } from 'react-appinsights';
-import { ReactAI } from 'react-appinsights';
+import { reactAI, withAITracking } from 'react-appinsights';
 
 interface State {
   message: string;
@@ -24,17 +23,17 @@ class DemoPageA extends React.Component<any, State> {
   }
 
   trackException() {
-    ReactAI.rootInstance.trackException({ error: new Error('some error'), severityLevel: 3 });
+    reactAI.appInsights.trackException({ error: new Error('some error'), severityLevel: 3 });
     this.setState({ message: "Exception explicitly tracked" });
   }
 
   trackTrace() {
-    ReactAI.rootInstance.trackTrace({ message: 'some trace', severityLevel: 1 });
+    reactAI.appInsights.trackTrace({ message: 'some trace', severityLevel: 1 });
     this.setState({ message: "Trace explicitly tracked" });
   }
 
   trackEvent() {
-    ReactAI.rootInstance.trackEvent({ name: 'some event' });
+    reactAI.appInsights.trackEvent({ name: 'some event' });
     this.setState({ message: "Event explicitly tracked" });
   }
 
