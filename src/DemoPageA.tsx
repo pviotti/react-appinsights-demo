@@ -20,6 +20,7 @@ class DemoPageA extends React.Component<any, State> {
     this.trackEvent = this.trackEvent.bind(this);
     this.throwError = this.throwError.bind(this);
     this.ajaxRequest = this.ajaxRequest.bind(this);
+    this.setUserContext = this.setUserContext.bind(this);
   }
 
   trackException() {
@@ -50,6 +51,11 @@ class DemoPageA extends React.Component<any, State> {
     this.setState({ message: "Ajax request performed and automatically collected" });
   }
 
+  setUserContext() {
+    this.setState({ message: "Setting user context with u1, a1" });
+    reactAI.appInsights.setAuthenticatedUserContext("u1", "a1");
+  }
+  
   render() {
     return (
       <div>

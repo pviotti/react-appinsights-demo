@@ -12,14 +12,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const history = createBrowserHistory({ basename: process.env.PUBLIC_URL });
-const IK = process.env.REACT_APP_APPINSIGHTS_KEY === undefined ? "XXX" : process.env.REACT_APP_APPINSIGHTS_KEY;
-
+const IK = process.env.REACT_APP_APPINSIGHTS_KEY === undefined ? "xxx" : process.env.REACT_APP_APPINSIGHTS_KEY;
+console.log("Initializaing AI with Instrumentation Key: ", IK);
 let appInsights = new ApplicationInsights({
     config: {
         instrumentationKey: IK,
         extensions: [reactAI],
         extensionConfig: {
-            [reactAI.extensionId]: { debug: true }
+            [reactAI.extensionId]: { debug: true, history }
         }
     }
 });
